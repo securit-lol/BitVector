@@ -1,4 +1,4 @@
-# BilVector
+# BitVector
 
 ## English
 
