@@ -1,3 +1,4 @@
+#pragma once
 #include <algorithm>        // for copy, fill, max, min, move
 #include <cstddef>          // for size_t, ptrdiff_t
 #include <iterator>         // for reverse_iterator, random_access_iterator_tag
@@ -43,8 +44,9 @@ private:
     template <bool is_const>
     class IteratorImpl {
         using PtrType = std::conditional_t<is_const, const char*, char*>;
-        PtrType data_ = nullptr;
         int cur_indx = 0;
+    public:
+        PtrType data_ = nullptr;
     public:
         using difference_type = std::ptrdiff_t;
         using value_type = bool;
