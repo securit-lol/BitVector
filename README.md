@@ -1,4 +1,4 @@
-# BoolVector
+# BilVector
 
 ## English
 
